@@ -1,1 +1,67 @@
 <h1>Find your dream home today</h1>
+
+
+<div class="bg-image">
+  <button><%= link_to 'Find my home', properties_path %></button>
+  <%= link_to properties_path do %>
+    <button>Find my home </button>
+<% end %>
+</div>
+
+<div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Global New and Off-plan projects at your fingertips.<span class="text-muted">Buy from the developer</span></h2>
+            <p class="lead">Whether you're looking to buy a new holiday home for your family or for investment, Novo will have all you need.</p>
+          </div>
+          <div class="col-md-5">
+            <%= image_tag("main2.jpg", class:"featurette-image img-fluid mx-auto") %>
+          </div>
+        </div>
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Citizenship by Investment (CBI) and Residency Programs. <span class="text-muted">Plan B?</span></h2>
+            <p class="lead">Get your residency in low-tax/ tax free countries to benefit from tax savings and the life you've dreamed of. </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <%= image_tag("main3.jpg", class:"featurette-image img-fluid mx-auto") %>
+          </div>
+        </div>
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Build your own!</h2>
+            <p class="lead">Hassle-free access to professionals to help you with the process.</p>
+          </div>
+          <div class="col-md-5">
+            <%= image_tag("main4.jpg", class:"featurette-image img-fluid mx-auto") %>
+          </div>
+        </div>
+        <!-- /END THE FEATURETTES -->
+            <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <h2>New Builds</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn" href="#" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <h2>Off-Plan</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn" href="#" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <h2>Custom</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn" href="#" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+         <%# New posts from Global Property Guide  %>
+          <%# api calls  %>
+
+      </div>

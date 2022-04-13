@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_01_181002) do
+ActiveRecord::Schema.define(version: 2022_04_13_053320) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 2022_04_01_181002) do
     t.string "last_name", default: "", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.string "url"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -42,13 +41,14 @@ ActiveRecord::Schema.define(version: 2022_04_01_181002) do
   create_table "properties", force: :cascade do |t|
     t.bigint "account_id"
     t.string "name"
-    t.string "address"
     t.integer "price"
-    t.integer "rooms"
+    t.integer "bedrooms"
     t.integer "bathrooms"
     t.string "photo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "area"
+    t.string "country"
     t.index ["account_id"], name: "index_properties_on_account_id"
   end
 

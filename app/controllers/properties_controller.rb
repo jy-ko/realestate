@@ -3,7 +3,20 @@ class PropertiesController < ApplicationController
 
   # GET /properties or /properties.json
   def index
-    @properties = Property.all
+    # @properties = Property.all
+      @filterrific = initialize_filterrific(
+        Property,
+        params[:filterrific], 
+        select_options: {
+          :sorted_by => Property.options_for_sorted_by
+        }
+      ) or return
+      @properties = @filterrific.find.page(params[:page])
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /properties/1 or /properties/1.json

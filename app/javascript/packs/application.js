@@ -6,3 +6,5 @@
 import Rails from "@rails/ujs"
 
 Rails.start()
+
+//= require filterrific/filterrific-jquery

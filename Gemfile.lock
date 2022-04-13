@@ -74,8 +74,12 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (1.1.0)
     erubi (1.10.0)
+    faker (2.20.0)
+      i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
+    filterrific (5.2.3)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -186,6 +190,7 @@ GEM
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    will_paginate (3.3.1)
     zeitwerk (2.5.4)
 
 PLATFORMS
@@ -196,6 +201,9 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   devise
+  devise-bootstrap-views (~> 1.0)
+  faker
+  filterrific
   jbuilder (~> 2.7)
   listen (~> 3.3)
   pg (~> 1.1)
@@ -207,6 +215,7 @@ DEPENDENCIES
   tzinfo-data
   web-console (>= 4.1.0)
   webpacker (~> 5.0)
+  will_paginate
 
 RUBY VERSION
    ruby 2.6.3p62
