@@ -6,10 +6,13 @@ class PropertiesController < ApplicationController
     # @properties = Property.all
       @filterrific = initialize_filterrific(
         Property,
-        params[:filterrific]
+        params[:filterrific], 
+        select_options: {
+          :sorted_by => Property.options_for_sorted_by
+        }
       ) or return
       @properties = @filterrific.find.page(params[:page])
- 
+
     respond_to do |format|
       format.html
       format.js

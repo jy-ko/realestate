@@ -2,9 +2,11 @@
 
 
 <div class="bg-image">
- <button>Find my home</button>
+  <button><%= link_to 'Find my home', properties_path %></button>
+  <%= link_to properties_path do %>
+    <button>Find my home </button>
+<% end %>
 </div>
-
 
 <div class="container marketing">
 
