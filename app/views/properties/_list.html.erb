@@ -1,0 +1,25 @@
+<div id="filterrific_results">
+
+  <div>
+    <%= page_entries_info properties # provided by will_paginate %>
+  </div>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Country</th>
+      <th>Registered at</th>
+    </tr>
+    <% properties.each do |property| %>
+      <tr>
+        <td><%= link_to(property.address, property_path(property)) %></td>
+        <td><%#= student.email %></td>
+        <td><%#= student.country_name %></td>
+        <td><%#= student.decorated_created_at %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<%= will_paginate properties # provided by will_paginate %>
