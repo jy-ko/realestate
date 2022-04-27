@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Properties</h1>
+<h1>All listings</h1>
 
 <div class="container">
   <%= form_for_filterrific @filterrific do |f| %>
@@ -29,6 +29,3 @@
     locals: { properties: @properties }
   ) %>
 </div>
-
-<%# </div>
-  <%= link_to 'New Property', new_property_path %>
